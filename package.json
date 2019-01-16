@@ -4,7 +4,7 @@
   "scripts": {
     "client": "cd client && npm start",
     "server": "nodemon server.js",
-    "dev": "cd components && npm run build && cd .. && concurrently --kill-others-on-fail \"node server\" \"cd client/ && npm start\""
+    "dev": "cd components && npm run build && cd ../ && npm i && concurrently --kill-others-on-fail \"node server\" \"cd client/ && npm i && npm start\""
   },
   "dependencies": {
     "express": "^4.16.4"
